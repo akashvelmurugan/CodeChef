@@ -17,6 +17,6 @@ public class PeacefullOffParty {
 				System.out.println(array[1]);
 			}
 		}
-
 	}
 }
+
