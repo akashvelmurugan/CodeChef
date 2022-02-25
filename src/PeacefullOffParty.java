@@ -5,16 +5,19 @@ public class PeacefullOffParty {
 
 		Scanner scanner= new Scanner(System.in);
 
-		int size = scanner.nextInt();
-		for (int i = 0; i < size; i++) {
-			int array[]=new int[size];
-			for (int j = 0; j <size; j++) {
-				array[j]= scanner.nextInt();
+		int testCase = scanner.nextInt();
+		for (int i = 0; i < testCase; i++) {
+			int city[]=new int[3];
+			for (int j = 0; j <3; j++) {
+				city[j]= scanner.nextInt();
 			}
-			if (array[0]+array[2]>array[1]) {
-				System.out.println(array[0]+array[2]);
+			int a=city[0];
+			int b=city[1];
+			int c=city[2];
+			if (a+c>b) {
+				System.out.println(a+c);
 			} else {
-				System.out.println(array[1]);
+				System.out.println(b);
 			}
 		}
 	}
